@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class studentdetails 
+class studentdetails 
 {
     int regnum;
     String Name;
@@ -20,10 +20,12 @@ public class studentdetails
         System.out.print("Student Name:"+ Name)
         System.out.print("Phone number:"+phone);
     }
-public static void main(String[] args)
-{
-    studentdetails s=new studentdetails();
-    s.display();
-
 }
+public class main 
+{
+    public static void main(String[] args)
+    {
+        studentdetails s=new studentdetails();
+        s.display();
+    }
 }
