@@ -17,7 +17,7 @@ class studentdetails
     {
         System.out.print("Student details");
         System.out.print("Register num:"+regnum);
-        System.out.print("Student Name:"+ Name)
+        System.out.print("Student Name:"+ Name);
         System.out.print("Phone number:"+phone);
     }
 }
