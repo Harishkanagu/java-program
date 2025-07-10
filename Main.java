@@ -21,7 +21,7 @@ class studentdetails
         System.out.print("Phone number:"+phone);
     }
 }
-public class main 
+public class Main 
 {
     public static void main(String[] args)
     {
