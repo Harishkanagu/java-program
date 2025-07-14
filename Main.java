@@ -2,7 +2,7 @@ package abstracts;
 
 import java.util.*;
 
-class Square extends Shape {
+class Area extends Shape {
 
     public void Areaofshape() {
         Scanner scanner = new Scanner(System.in);
@@ -44,7 +44,7 @@ class Square extends Shape {
 public class Main {
 
     public static void main(String[] args) {
-        Shape m = new Square();
+        Shape m = new Area();
         m.Areaofshape();
         m.Display();
     }
