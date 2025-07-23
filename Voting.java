@@ -17,7 +17,7 @@ public  class Voting{
         Voting vote_1;
         if (vote instanceof Voting) {
             vote_1 = (Voting) vote;
-            return this==vote_1;
+            return this.Votingnum==vote_1.Votingnum;
         }
         else {
             return false;
