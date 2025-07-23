@@ -1,51 +1,24 @@
-package abstracts;
-
-import java.util.*;
-
-class Area extends Shape {
-
-    public void Areaofshape() {
-        Scanner scanner = new Scanner(System.in);
-        int num;
-        do {
-
-            System.out.println("1.press 1 for area of circle:\n"
-                    + "2.press 2 for area of square:\n"
-                    + "3.press 3 for area of rectangle:\n"
-                    + "4.Exit...");
-            System.out.println("Enter the choice:");
-            num = scanner.nextInt();
-            if (num == 1) {
-                System.out.print("Enter the radius of circle:");
-                double r = scanner.nextDouble();
-                double area = 2 * 3.14 * r;
-                System.out.println("Area of the circle:" + area);
-            } else if (num == 2) {
-                System.out.print("Enter the value length of square:");
-                int a = scanner.nextInt();
-                double area = a * a;
-                System.out.println("Area of the Square:" + area);
-
-            } else if (num == 3) {
-                System.out.print("Enter the length of Rectangle:");
-                int l = scanner.nextInt();
-                System.out.print("Enter the breath of the Rectangle:");
-                int b = scanner.nextInt();
-                int area = l * b;
-                System.out.println("Area of the Rectangle:" + area);
-            } else {
-                break;
-            }
-        } while (num < 5);
-    }
-
-}
+package equalmethod;
 
 public class Main {
+    public static void main(String args[]){
 
-    public static void main(String[] args) {
-        Shape m = new Area();
-        m.Areaofshape();
-        m.Display();
+        Voting v1=new Voting("Hari",19,"9065656020");
+        Voting v2=new Voting("Anu",56,"9056785629");
+        Voting v3=new Voting("Mythili",78,"9072867629");
+        Voting v4=new Voting("Praveen",59,"9092933567");
+        Voting v5=new Voting("Karthick",5,"8233242340");
+        Voting v6=v5;
+        Voting v7=v6;
+        Voting v8=new Voting("Hari",19,"9065656020");
+        System.out.println(v1.equals(v2)
+                +"\n"+v2.equals(v3)+
+                "\n"+v4.equals(v5)+
+                "\n"+v6.equals(v5)+
+                "\n"+v6.equals(v7)+
+                "\n"+v8.equals(v1));
+        System.out.println(v1.toString());
+        System.out.println(v6.toString());
+        System.out.println(v7.toString());
     }
 }
