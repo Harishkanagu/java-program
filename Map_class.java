@@ -38,11 +38,13 @@ public class Map_class {
         map.put("Hari",dtsworker_1);
         map.put("Mythili",dtsworker_2);
         map.put("Praveen",dtsworker_3);
-         for(Workerdetails workers:dtsworker_1){
+        ArrayList<Workerdetails> list =map.get("Hari");
+         for(Workerdetails workers:list){
              System.out.println("IDnum:"+workers.getEmplyid());
              System.out.println("Address:"+workers.getAddress());
              System.out.println("Salary:"+workers.getSalary());
          }
 
     }
+
 }
